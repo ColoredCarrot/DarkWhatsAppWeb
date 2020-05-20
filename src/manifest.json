@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Dark WhatsApp Web",
+  "version": "1.0",
+  "description": "Dark Mode for WhatsApp Web",
+  "author": "Voidev",
+  "content_scripts": [
+    {
+      "matches": ["*://web.whatsapp.com/*"],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
